@@ -31,10 +31,10 @@ class MainActivity : ComponentActivity() {
                     verticalArrangement = Arrangement.spacedBy(12.dp),
                     modifier = Modifier.fillMaxSize()
                 ) {
-                    header(listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
-                    body(items = listOf(10, 11, 12, 13, 14, 15, 16, 17, 18, 19))
-                    footer(listOf(10, 11, 12, 13, 14, 15, 16, 17, 18, 19))
-                    body(listOf(20, 21, 22, 23, 24, 25, 26, 27, 28, 29), Color.Yellow)
+                    header((0..9).toList())
+                    body((10..19).toList())
+                    footer((20..29).toList())
+                    body((30..39).toList(), Color.Yellow)
                 }
             }
         }
